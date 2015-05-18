@@ -1,3 +1,6 @@
+<?php
+	require 'form.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +27,13 @@
 	<img class="secim1 img-responsive img" id="img21" src="img/list.png">
 </div>
 <div class="third container fluid">
-
+	<form method='POST' action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+			<span>Name:</span><input type='text' name='name' placeholder='Name'><span><?php echo $nameerror;?></span><br>
+			<span>ShopName:</span><input type='text' name='sname' placeholder='Shop Name'><span><?php echo $snameerror;?></span><br>
+			<span>Address:</span><input type='text' name='add' placeholder='Address'><span><?php echo $adderror;?></span><br>
+			<span>Email:</span><input type='text' name='email' placeholder='Email'><span><?php echo $emailerror;?></span><br>
+			<input type='submit' name='submit' value='Submit'>
+	</form>
 </div>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/index.js"></script> 

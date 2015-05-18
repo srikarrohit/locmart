@@ -32,4 +32,3 @@ function imagechange1(){
   }
 }
 setInterval(function(){ imagechange1()},1000);
-
