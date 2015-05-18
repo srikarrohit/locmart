@@ -10,3 +10,26 @@ function imagechange(){
 	}	
 }
 setInterval(function(){ imagechange()},1000);
+
+
+function imagechange1(){
+  var src1 = document.getElementById("img21").src;
+	console.log(src1);
+  if(src1 === "http://localhost/locmart/img/list.png")
+  {
+    document.getElementById("img21").src = "http://localhost/locmart/img/tracking.png";
+		console.log(1);
+  }
+	else if(src1 === "http://localhost/locmart/img/tracking.png")
+  {
+    document.getElementById("img21").src = "http://localhost/locmart/img/open.png";
+		console.log(2);
+  }
+	else if(src1 === "http://localhost/locmart/img/open.png")
+  {
+    document.getElementById("img21").src = "http://localhost/locmart/img/list.png";
+		console.log(3);
+  }
+}
+setInterval(function(){ imagechange1()},1000);
+
