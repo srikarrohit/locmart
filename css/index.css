@@ -23,19 +23,92 @@ height:60px!important;
 {
 padding:0px;!important;
 }
+.second
+{
+margin:0px 0px;
+padding:0px 0px;
+}
 .img1
 {
 position:absolute;
 top:300px;
-left:148px;
-height:200px;
-width:234px;
-}
-.secim1
-{
+left:150px;
 width:300px;
 }
-.second
+.img2
 {
-margin-top:50px;
+position:absolute;
+top:1000px;
+right:200px;
+width:250px;
+}
+.page2
+{
+	width:100%;
+}
+.third
+{
+	background-color:#16a085;
+	color:white;
+}
+td{
+	padding: 7px;
+}
+.box
+{
+	border-radius:5px;
+	width:350px;
+	height:30px;
+	border:1px solid white;
+	background-color:#16a085;
+	color: white;
+}
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+ input:focus{
+    outline: 0;
+}
+.wrap1
+{
+	width:60%;
+	margin:0 auto;
+}
+.wrap2
+{
+	width:50%;
+	margin:0 auto;
+}
+.business
+{
+	width:50%;
+	margin:0 auto;
+}
+.button
+{
+	width:30%;
+	margin:0 auto;
+}
+.btn {
+	background-color: #16a085;
+	color:white;
+	padding: 13px 18px 13px 18px;
+	border:2px solid white;
+}
+.btn:hover {
+  background-color:white;
+  color:#16a085;
+  text-decoration: none;
 }

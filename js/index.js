@@ -1,13 +1,17 @@
 function imagechange(){
 	var src1 = document.getElementById("img11").src;
-	if(src1 === "http://localhost/locmart/img/page1_1.png")
-	{
-		document.getElementById("img11").src = "http://localhost/locmart/img/page1_2.png";
-	}
-	else
-	{
-		document.getElementById("img11").src = "http://localhost/locmart/img/page1_1.png";
-	}	
+	 if(src1 === "http://localhost/locmart/img/page1_1.png")
+  {
+    document.getElementById("img11").src = "http://localhost/locmart/img/page1_2.png";
+  }
+	else if(src1 === "http://localhost/locmart/img/page1_2.png")
+  {
+    document.getElementById("img11").src = "http://localhost/locmart/img/page1_3.png";
+  }
+	else if(src1 === "http://localhost/locmart/img/page1_3.png")
+  {
+    document.getElementById("img11").src = "http://localhost/locmart/img/page1_1.png";
+  }
 }
 setInterval(function(){ imagechange()},1000);
 
@@ -15,19 +19,19 @@ setInterval(function(){ imagechange()},1000);
 function imagechange1(){
   var src1 = document.getElementById("img21").src;
 	console.log(src1);
-  if(src1 === "http://localhost/locmart/img/list.png")
+  if(src1 === "http://localhost/locmart/img/page2_1.png")
   {
-    document.getElementById("img21").src = "http://localhost/locmart/img/tracking.png";
+    document.getElementById("img21").src = "http://localhost/locmart/img/page2_2.png";
 		console.log(1);
   }
-	else if(src1 === "http://localhost/locmart/img/tracking.png")
+	else if(src1 === "http://localhost/locmart/img/page2_2.png")
   {
-    document.getElementById("img21").src = "http://localhost/locmart/img/open.png";
+    document.getElementById("img21").src = "http://localhost/locmart/img/page2_3.png";
 		console.log(2);
   }
-	else if(src1 === "http://localhost/locmart/img/open.png")
+	else if(src1 === "http://localhost/locmart/img/page2_3.png")
   {
-    document.getElementById("img21").src = "http://localhost/locmart/img/list.png";
+    document.getElementById("img21").src = "http://localhost/locmart/img/page2_1.png";
 		console.log(3);
   }
 }
@@ -51,10 +55,10 @@ if(name === "")
 	name_error="Name cannot be empty";
 	document.getElementById('name_error').innerHTML = name_error;
 }
-else if( name.match(/[\.0-9a-zA-Z]+/gi) != name )
+else if( name.match(/[\.0-9a-zA-Z\s]+/gi) != name )
 {
 	count++;
-	name_error="Only letters,numbers and dots are allowed";
+	name_error="Only letters,numbers,spaces and dots are allowed";
 	document.getElementById('name_error').innerHTML = name_error;
 }
 else
@@ -68,10 +72,10 @@ if(sname === "")
 	sname_error="Shop Name cannot be empty";
 	document.getElementById('sname_error').innerHTML = sname_error;
 }
-else if( sname.match(/[\.0-9a-zA-Z]+/gi) != sname )
+else if( sname.match(/[\.0-9a-zA-Z\s]+/gi) != sname )
 {
 	count++;
-	sname_error="Only letters,numbers and dots are allowed";
+	sname_error="Only letters,numbers,spaces and dots are allowed";
 	document.getElementById('sname_error').innerHTML = sname_error;
 }
 else
